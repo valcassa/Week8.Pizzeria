@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>MENU - Pizzeria da Giorgio</title>
+    <script src="Pizzeria.js"></script>
+    <link href="Pizzeria.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="https://yt3.ggpht.com/ytc/AKedOLS4Ks4vXyX1WfYHN1tq2FA5qofzKUtS8nhUDn-fwA=s900-c-k-c0x00ffffff-no-rj" height="100px" />
+            <ul>
+                <li>
+                    <a href="Home.html">
+                        <span class="icon"><i class="Home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Menu.html" class="active">
+                        <span class="icon"><i class="Menu"></i></span>
+                        <span class="item">Menu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Contatti.html">
+                        <span class="icon"><i class="Contatti"></i></span>
+                        <span class="item">Contatti</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+  <br /><br />
+        <main id="MenuMain">
+            <center>
+                <div class="frame" style="border:5px solid darkred;" >
+                    <div align="right"> <h1>Menù</h1></div>
+
+                    <table border="0" width="100%" cellpadding="5" cellspacing="5" >
+
+                        <tbody>
+                            <tr>
+                                <td><img class="pizza" src="https://primochef.it/wp-content/uploads/2019/07/SH_pizza_napoletana-640x350.jpg" width="150px" /></td>
+                                <td><b>Pizza Margherita</b><br /><p style="font-size:12px">Ingredienti: Pomodoro San Marzano, Firodilatte, Basilico</p></td>
+                                <td class="prezzo">3.50€</td>
+                                <td> <input type="checkbox"></td>
+
+                            </tr>
+
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td><img class="pizza" src="https://primochef.it/wp-content/uploads/2018/05/SH_pizza_capricciosa.jpg" width="150px" /></td>
+                                <td><b>Pizza Capricciosa</b><br /><p style="font-size:12px">Ingredienti: Pomodoro San Marzano, Firodilatte, Prosciutto Cotto, Olive, Funghi sott'olio</p></td>
+                                <td class="prezzo">4.50€</td>
+                                <td> <input type="checkbox"></td>
+
+                            </tr>
+
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td><img class="pizza" src="https://files.synapp.it/1458455/foto/prodotti/B/1615064281656_whatsapp_image_2021-03-06_at_20.09.23__1__B.jpeg" width="150px" /></td>
+                                <td><b>Pizza Principessa</b><br /><p style="font-size:12px">Ingredienti: Pomodoro San Marzano, Firodilatte, Prosciutto, Rucola</p></td>
+                                <td class="prezzo">5.00€</td>
+                                <td> <input type="checkbox"></td>
+
+                            </tr>
+
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><img class="pizza" src="https://wips.plug.it/cips/buonissimo.org/cms/2012/05/pizza-marinara-5.jpg" width="150px" /></td>
+                                <td><b>Pizza Marinara</b><br /><p style="font-size:12px">Ingredienti: Pomodoro San Marzano, Origano</p></td>
+                                <td class="prezzo">2.50€</td>
+                                <td> <input type="checkbox"></td>
+
+                            </tr>
+
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><img class="pizza" src="https://media.istockphoto.com/photos/hawaiian-pizza-isolated-on-a-white-background-picture-id482819104?s=612x612" width="150px" /></td>
+                                <td><b>Pizza Hawaiiana "per finta"</b><br /><p style="font-size:12px">Ingredienti: Pomodoro San Marzano, Firodilatte, Patate, Prosciutto</p></td>
+                                <td class="prezzo">6.00€</td>
+                                <td> <input type="checkbox"></td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                    <div align="right">
+                        <img src="https://banner2.cleanpng.com/20180428/ccq/kisspng-shopping-cart-computer-icons-symbol-5ae4cb9371f981.1482035815249437634669.jpg" width="80px">
+                        <a id="goOn" href="ConfermaOrdine.html">
+                            <input onclick="calcoloCheckOut();" type="button" value="Checkout" class="button">
+                        </a>
+                    </div>
+                </div>
+
+
+            </center>
+        </main>
+
+        <div class="footer">
+            <p>Pizzeria <b>Da Giorgio</b> Via Porte di Roma 69, Roma </p>
+            <b>Contatti</b> Telefono: +39 06.000000/+39 3313333334  Tutti i Diritti Riservati.
+        </div>
+</body>
+</html>

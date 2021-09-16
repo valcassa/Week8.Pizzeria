@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>MENU - Pizzeria da Giorgio</title>
+
+    <script src="Pizzeria.js"></script>
+    <link href="Pizzeria.css" rel="stylesheet" />
+</head>
+<div class="wrapper">
+    <div class="sidebar">
+        <img src="https://yt3.ggpht.com/ytc/AKedOLS4Ks4vXyX1WfYHN1tq2FA5qofzKUtS8nhUDn-fwA=s900-c-k-c0x00ffffff-no-rj" height="100px" />
+        <ul>
+            <li>
+                <a href="Home.html">
+                    <span class="icon"><i class="home"></i></span>
+                    <span class="item">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="Menu.html" class="active">
+                    <span class="icon"><i class="menu"></i></span>
+                    <span class="item">Menu</span>
+                </a>
+            </li>
+            <li>
+                <a href="Contatti.html">
+                    <span class="icon"><i class="contacts"></i></span>
+                    <span class="item">Contatti</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+ <body onload="mostraSpesa()">
+     <br />
+
+<br />
+<br />
+<main>
+    <center>
+        <div class="frame" style="border:5px solid darkred; text-align: left;">
+            <h1>Carrello</h1>
+
+            <p id="spesa" align="right"></p><br />
+            <form id="ordine">
+                <br /><br /><br />     <br />
+                <label><b>Nome:</b></label>
+                <input type="text" required><br>
+                <br />
+                <label><b>Cognome:</b></label>
+                <input type="text" required><br /> <br />
+                <label><b>Indirizzo:</b></label>
+                <input type="text" required> <br /> <br />
+                <label><b>Numero di Telefono:</b></label>
+                <input type="tel" required> <br /> <br />
+                <label><b>Metodo di Pagamento:</b></label>
+                <img src="https://image.freepik.com/free-icon/bank-cards-icon-white-black_318-1960.jpg" height="50px" />
+                <label><input type="radio" value="1" name="metodopagamento" id="carta" onchange="mostraCarta()"> Carta di Credito</label>
+                <img src="https://thumbs.dreamstime.com/b/euro-icona-di-vettore-dei-soldi-illustrazione-bianco-e-nero-dei-contanti-icona-lineare-di-attivit%C3%A0-bancarie-del-profilo-92863466.jpg" height="50px" />
+                <label><input type="radio" id="contanti" value="2" name="metodopagamento" onchange="mostraCarta()"> Contanti</label><br>
+                <div id="codiceCarta" style="display:none">
+                    <br /><br />
+                    <label><b>Inserisci le cifre della Carta di Credito:</b></label>
+                    <input type="text" required />
+                </div>
+                <br /> <br />
+                <br /><br /><br />
+                <div style="text-align:right"><input type="submit" class="button" value="Conferma Prenotazione" onclick="richiesta()"></div>
+
+            </form>
+
+        </div>
+    </center>
+</main>
+
+
+<div class="footer">
+    <p>Pizzeria <b>Da Giorgio</b> Via Porte di Roma 69, Roma </p>
+    <b>Contatti</b> Telefono: +39 06.000000/+39 3313333334  Tutti i Diritti Riservati.
+</div>
+ </body>
+</html>
